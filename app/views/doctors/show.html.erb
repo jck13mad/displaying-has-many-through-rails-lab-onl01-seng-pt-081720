@@ -4,6 +4,6 @@
 
 <ul>
   <% @doctor.appointments.each do |a| %>
-    <li><%= a.appointment_datetime.strftime</li>
+    <li><%= a.appointment_datetime.strftime('%B %d, %Y')</li>
   <% end %>
 </ul>
