@@ -1,4 +1,4 @@
 class Patient < ApplicationRecord
   has_many :appointments 
-  belongs_to :doctor, through: :appointments
+  has_many :doctors, through: :appointments
 end
