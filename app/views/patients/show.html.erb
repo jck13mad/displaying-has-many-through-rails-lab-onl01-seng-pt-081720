@@ -4,6 +4,6 @@
 
 <ul>
   <% @patient.appointments.each do |a| %>
-    <li><%= a.appointment_datetime.strftime('%B %d, %Y') %> at <%= appointment.appointment_datetime.strftime('%H:%M') %> - <%= link_to </li>
+    <li><%= a.appointment_datetime.strftime('%B %d, %Y') %> at <%= a.appointment_datetime.strftime('%H:%M') %> - <%= link_to a.doctor</li>
   <% end %>
 </ul>
